@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 
@@ -76,9 +77,11 @@ const Navbar = () => {
                 title="Start buying"
                 className="w-full py-3 px-6 text-center rounded-full transition active:bg-yellow-200   focus:bg-yellow-100 sm:w-max"
               >
-                <span className="block text-yellow-800 font-semibold text-sm">
-                  Sign up
-                </span>
+                <Link href="/signup">
+                  <span className="block text-yellow-800 font-semibold text-sm">
+                    Sign up
+                  </span>
+                </Link>
               </button>
               <button
                 type="button"
